@@ -1,0 +1,12 @@
+@use "./assets/palette";
+.body {
+    min-width: 100vw;
+    min-height: 100%;
+    background-color: palette.$background-colour;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__app {
+        width: 600px;
+    }
+}

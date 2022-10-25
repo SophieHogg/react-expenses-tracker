@@ -1,0 +1,23 @@
+@use "./../../assets/palette";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.TransactionList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    font-family: "Montserrat", sans-serif;
+    &__title {
+        font-size: 25px;
+        color: palette.$text-colour;
+    }
+    &__element {
+        font-size: 20px;
+        padding: 10px;
+        min-width: 400px;
+        background-color: palette.$bright-theme-colour;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px;
+    }
+}

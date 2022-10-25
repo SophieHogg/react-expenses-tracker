@@ -1,0 +1,13 @@
+@use "../../assets/palette";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.Balance {
+    font-family: "Montserrat", sans-serif;
+    padding: 20px;
+    color: palette.$text-colour;
+    text-align: left;
+    margin-top: 1%;
+    &__title {
+        font-weight: normal;
+    }
+}

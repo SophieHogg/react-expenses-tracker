@@ -1,0 +1,39 @@
+@use "./../../assets/palette";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.IncomeExpenses {
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    &__income {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 100px;
+        background-color: palette.$income-colour;
+        border: 4px solid palette.$income-border-colour;
+    }
+    &__expenses {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 200px;
+        height: 100px;
+        background-color: palette.$expenses-colour;
+        border: 4px solid palette.$expenses-border-colour;
+    }
+    &__value {
+        font-size: 25px;
+        font-weight: bold;
+    }
+    &__title {
+        font-size: 20px;
+        padding-bottom: 10px;
+        font-weight: normal;
+    }
+}

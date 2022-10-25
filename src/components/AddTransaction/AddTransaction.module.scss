@@ -1,0 +1,46 @@
+@use "./../../assets/palette";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+.AddTransaction {
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-family: "Montserrat", sans-serif;
+    &__title {
+        font-size: 25px;
+        margin: 20px;
+        color: palette.$text-colour;
+    }
+    &__form {
+        display: flex;
+        flex-direction: column;
+        &__label {
+            color: palette.$bright-theme-colour;
+            text-align: left;
+            font-size: 20px;
+        }
+        &__input {
+            margin-bottom: 20px;
+            margin-top: 10px;
+            height: 2em;
+            font-size: 20px;
+        }
+        &__button {
+            width: 300px;
+            margin: 20px;
+            padding: 10px;
+            font-size: 20px;
+            border: 0;
+            border-radius: 10px;
+            background-color: palette.$button-colour;
+            &:hover {
+                background-color: palette.$button-hover-colour;
+                cursor: pointer;
+            }
+            &:active {
+                background-color: palette.$button-click-colour;
+                color: palette.$button-click-font-colour;
+            }
+        }
+    }
+}
