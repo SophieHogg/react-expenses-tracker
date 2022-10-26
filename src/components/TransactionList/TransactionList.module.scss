@@ -5,19 +5,22 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
     font-family: "Montserrat", sans-serif;
     &__title {
         font-size: 25px;
         color: palette.$text-colour;
     }
-    &__element {
-        font-size: 20px;
-        padding: 10px;
-        min-width: 400px;
-        background-color: palette.$bright-theme-colour;
-        display: flex;
-        justify-content: space-between;
+    &__noTransactions {
+        color: palette.$button-colour;
         margin: 20px;
+        font-weight: normal;
+        font-size: 20px;
+        // font-style: italic;
+        text-align: center;
+        &__p {
+            font-size: 17px;
+            margin-top: 10px;
+            font-style: italic;
+        }
     }
 }

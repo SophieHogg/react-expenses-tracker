@@ -10,20 +10,32 @@
         font-size: 25px;
         margin: 20px;
         color: palette.$text-colour;
+        @media only screen and (max-width: 401px) {
+            margin: 10px;
+            font-size: 23px;
+        }
     }
     &__form {
         display: flex;
         flex-direction: column;
+        justify-content: center;
         &__label {
             color: palette.$bright-theme-colour;
             text-align: left;
             font-size: 20px;
+            margin-top: 10px;
+        }
+        &__prompt {
+            color: white;
         }
         &__input {
             margin-bottom: 20px;
             margin-top: 10px;
             height: 2em;
             font-size: 20px;
+            @media only screen and (max-width: 480px) {
+                margin-bottom: 5px;
+            }
         }
         &__button {
             width: 300px;
@@ -33,6 +45,11 @@
             border: 0;
             border-radius: 10px;
             background-color: palette.$button-colour;
+            @media only screen and (max-width: 401px) {
+                margin-top: 20px;
+                width: 250px;
+                padding: 8px;
+            }
             &:hover {
                 background-color: palette.$button-hover-colour;
                 cursor: pointer;

@@ -1,0 +1,52 @@
+@use "./../../assets/palette";
+.Transaction {
+    list-style: none;
+    background-color: palette.$bright-theme-colour;
+    margin: 20px;
+    min-width: 430px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @media only screen and (max-width: 485px) {
+        min-width: 300px;
+    }
+    &__delete {
+        width: 20px;
+        height: 38px;
+        color: palette.$delete-colour;
+        font-weight: bold;
+        font-size: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+        border: 0;
+        background-color: palette.$bright-theme-colour;
+        @media only screen and (max-width: 480px) {
+            margin-right: 5px;
+        }
+        &:hover {
+            color: palette.$delete-hover-colour;
+            cursor: pointer;
+        }
+    }
+    &__element {
+        font-size: 20px;
+        min-width: 410px;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        @media only screen and (max-width: 480px) {
+            min-width: 280px;
+            font-size: 17px;
+        }
+    }
+    &__line {
+        &__minus {
+            width: 10px;
+            background-color: palette.$expenses-colour;
+        }
+        &__plus {
+            width: 10px;
+            background-color: palette.$income-colour;
+        }
+    }
+}
